@@ -1,9 +1,13 @@
 ﻿define(function(require, exports, module) {
-	//console.log(module.uri);
-	//console.log(require.resolve('./hello'));
-	// 通过 require 引入依赖
-	var Hello = require('./hello');
-	var h = new Hello('world!');
-	h.say();
-});
 
+	function Hello(param) {
+		this.param = param;
+	}
+
+	module.exports = Hello;
+
+	Hello.prototype.say = function() {
+		document.getElementById('test').innerHTML = "Hello World!";
+	}
+
+});
