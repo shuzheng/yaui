@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+/*public*/
+::-moz-selection{background:rgba(65, 131, 196, 0.4);/*#3168C3;*/color:#fff;text-shadow:none;} 
+::selection{background:rgba(65, 131, 196, 0.4);/*#3168C3;*/color:#fff;text-shadow:none;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background-color:#fff;}
+::-webkit-scrollbar-thumb{-webkit-border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.7);}
+html{_overflow-x:hidden;}
+body{margin:0;padding:0;font-size:12px;color:#666;background:#fff;font-family:"Courier New";
+	font-size-adjust:none;
+	-webkit-text-size-adjust:none;
+	-moz-font-size-adjust:none;
+	-ms-font-size-adjust:one;
+	-o-font-size-adjust:none;
+	overflow-x:hidden;
+}
+ul,p,h3{margin:0;padding:0;}
+li{float:left;margin:0;padding:0;list-style-type:none;text-indent:0;}
+body,div,span,ul,li,p,a{text-shadow:0px 1px 1px #fff;}
+a{text-decoration:none;hide-focus:expression(this.hideFocus=true);color:#444;}
+a:focus{outline:none;}
+a img{border:none;}
+h3,p{margin:10px auto;}
+
+.left_button{border-top-right-radius:0;border-bottom-right-radius:0;}
+.middle_button{border-radius:0;margin-left:-1px;}
+.right_button{border-top-left-radius:0;border-bottom-left-radius:0;margin-left:-1px;}
+.left_button:hover,.middle_button:hover,.right_button:hover{z-index:1;}
+.button-blue{z-index:2;}
+
+.wrap{width:960px;margin:0 auto;/*position:relative;*/}
+#top{
+	width:100%;height:100px;border:1px solid #fff;border-bottom-color:#e6e6e6;background-color:#f4f4f4;
+	/*position:fixed;top:0;z-index:1;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));*/
+	/*filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorStr='#d9d9d9',endColorStr='#ffffff');background-image:-webkit-gradient(linear,0 0,0 100%,from(#d9d9d9),color-stop(0.2,#f4f4f4),color-stop(0.2,#f4f4f4),to(#f4f4f4));*/
+}
+	#top .wrap{height:100px;}
+	#logo{float:left;width:200px;height:100px;text-align:center;overflow:hidden;}
+		#logo_img{font-size:45px;font-weight:bold;margin-top:15px;position:relative;/*font-family:Arial;*/}
+			#c1{color:#D37D7D;}#c2{color:#899DE5;}#c3{color:#ccc;}#c4{color:#90C585;}#c5{color:#E5CB74;}
+			#logo sup{position:absolute;top:5px;right:5px;font-size:12px;font-weight:normal;color:#fff;background:#bbb;margin-left:5px;padding:0 2px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-shadow:none;}
+		#logo_txt{font-size:12px;color:#999;}
+			
+	#menu{float:left;width:700px;height:100px;margin-left:60px;position:relative;font-family:"楷体","楷体_GB2312";}
+	#menu a{display:block;float:left;width:80px;font-size:16px;padding:8px 0;margin-top:33px;position:relative;}
+
+#middle{margin:0 auto;border-top:1px solid #fff;border-bottom:1px solid #e6e6e6;padding:10px 0;background:#f9f9f9;/*margin-top:102px;*/}
+	.title{font-size:18px;height:30px;line-height:30px;color:#999;font-size:12px;border-bottom:3px solid #eee;margin:10px 0;position:relative;text-align:right;}
+		.title span{position:absolute;border-bottom:3px solid #ccc;font-size:16px;line-height:30px;left:0;bottom:-3px;font-family:'Microsoft YaHei','黑体';}
+	.subtitle{font-size:12px;color:#999;}
+	.demo{padding:0 2em;overflow:hidden;}
+		 .demo h3{font-weight:normal;font-size:12px;}
+	.code{background:#fff;border-left:3px solid #6CE26C;padding-left:5px;line-height:20px;color:#000;}
+		.code{font-size:14px;}
+		.code i{font-style:normal;color:#00f;}
+	#start{padding:10px 0;text-align:center;font-weight:bold;letter-spacing:1px;}
+	.content{padding:0 2em;overflow:hidden;}
+		.content h3{font-weight:normal;font-size:12px;}
+		.content p{text-indent:2em;}
+#footer{background:#ececec;border-top:1px solid #fff;padding:20px 0;overflow:hidden;}
+	#footer_left{float:left;width:400px;}
+		#footer_left a{font-size:18px;font-weight:bold;}
+	#footer_right{float:left;width:560px;}
+		#footer_right .f_title{font-size:14px;font-weight:bold;}
+		#footer_right ul{width:185px;float:left;}
+		#footer_right ul li{width:185px;height:25px;line-height:25px;}
+
+.toolbar{display:none;}
+#totop{display:block;width:54px;height:54px;background:#aaa;text-align:center;line-height:54px;font-size:30px;color:#fff;cursor:pointer;position:fixed;_position:absolute;bottom:10px;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));right:10px;display:none;}
+#totop:hover{background:#999;}
+#totop:active{background:#888;}
+#test{min-height:500px;line-height:500px;text-align:center;}
